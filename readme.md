@@ -1,11 +1,11 @@
 # Desafio de Análise de Conversas com OpenAI
 
-Desenvolva uma aplicação para analisar conversas de atendimento e extrair informações como:
+Desenvolva uma aplicação para analisar conversas de atendimento e extrair as informações:
 - **satisfaction**: nota de satisfação do cliente (0 a 10);
 - **summary**: resumo da conversa;
-- **improvement**: sugestões de como a conversa poderia ter sido melhorada.
+- **improvement**: como a conversa poderia ter sido melhor.
 
-A aplicação deve fazer uso da api `https://api.openai.com/v1/chat/completions` para processar as mensagens e gravar o resultado em um banco de dados. Caso outras informações sejam consideradas úteis, novas colunas podem ser adicionadas à tabela `analysis`.
+A aplicação deve utilizar a API `https://api.openai.com/v1/chat/completions` com o modelo `gpt-4o-mini` para processar as mensagens e gravar o resultado no banco de dados. Caso outras informações sejam consideradas úteis, novas colunas podem ser adicionadas à tabela `analysis`.
 
 ## Pré-requisitos
 
@@ -27,9 +27,13 @@ A aplicação deve fazer uso da api `https://api.openai.com/v1/chat/completions`
    ```
 2. A aplicação iniciará e fará a análise das conversas.
 
+3. As informações extraídas serão gravadas no banco de dados.
+
+## Avaliação
+- A elaboração do prompt e a solução para extração de dados são os pontos principais a serem avaliados.
+
 ## Observações
 
 - Mensagens de exemplo serão inseridas automaticamente no banco de dados.
 - As conversas possuem o campo `remote` para indicar se a mensagem foi enviada pelo cliente (`true`) ou pela assistente (`false`).
-- Uma boa conversa é aquela em que a assistente responde às perguntas do usuário e finaliza a reserva.  
-- A forma de elaboração do prompt e a solução para extração de dados são os pontos principais a serem avaliados.
+- Uma boa conversa é aquela em que a assistente responde adequadamente às perguntas do usuário e finaliza a reserva.  
