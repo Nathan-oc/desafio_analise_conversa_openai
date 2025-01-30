@@ -5,7 +5,7 @@ Desenvolva uma aplicação para analisar conversas de atendimento e extrair info
 - **summary**: resumo da conversa;
 - **improvement**: sugestões de como a conversa poderia ter sido melhorada.
 
-A aplicação deve fazer uso da api `https://api.openai.com/v1/chat/completions` para processar as mensagens e grava o resultado em um banco de dados. Caso outras informações sejam consideradas úteis, novas colunas podem ser adicionadas à tabela `analysis`.
+A aplicação deve fazer uso da api `https://api.openai.com/v1/chat/completions` para processar as mensagens e gravar o resultado em um banco de dados. Caso outras informações sejam consideradas úteis, novas colunas podem ser adicionadas à tabela `analysis`.
 
 ## Pré-requisitos
 
@@ -29,6 +29,7 @@ A aplicação deve fazer uso da api `https://api.openai.com/v1/chat/completions`
 
 ## Observações
 
+- Mensagens de exemplo serão inseridas automaticamente no banco de dados.
 - As conversas possuem o campo `remote` para indicar se a mensagem foi enviada pelo cliente (`true`) ou pela assistente (`false`).
 - Uma boa conversa é aquela em que a assistente responde às perguntas do usuário e finaliza a reserva.  
 - A forma de elaboração do prompt e a solução para extração de dados são os pontos principais a serem avaliados.
