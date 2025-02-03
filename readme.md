@@ -37,3 +37,14 @@ A aplicação deve utilizar a API `https://api.openai.com/v1/chat/completions` c
 - Mensagens de exemplo serão inseridas automaticamente no banco de dados.
 - As conversas possuem o campo `remote` para indicar se a mensagem foi enviada pelo cliente (`true`) ou pela assistente (`false`).
 - Uma boa conversa é aquela em que a assistente responde adequadamente às perguntas do usuário e finaliza a reserva.  
+
+## Observação da resolução
+
+- É necessário ter um arquivo .env que consta user, password e name do banco Postgres e também a chave da API da OpenAI
+- Toda a execução do código é feita em main.py, entretanto, há um notebook de análise onde é mostrado de forma explicada o que foi feito.
+
+
+
+
+
+
