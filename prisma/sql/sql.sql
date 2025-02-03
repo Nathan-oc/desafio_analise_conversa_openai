@@ -35,6 +35,9 @@ CREATE TABLE "analysis" (
     "summary" TEXT NOT NULL,
     "improvement" TEXT NOT NULL,
     "created_at" TIMESTAMP(0) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "reserva" INTEGER,
+    "income" FLOAT,
+    "data_reserva" TIMESTAMP(0) DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "analysis_pkey" PRIMARY KEY ("id")
 );
@@ -79,7 +82,7 @@ COPY public.session (id, motel_id, created_at) FROM stdin;
 -- Data for Name: analysis; Type: TABLE DATA; Schema: public; Owner: teste_guia
 --
 
-COPY public.analysis (id, session_id, satisfaction, summary, improvement, created_at) FROM stdin;
+COPY public.analysis (id, session_id, satisfaction, summary, improvement, created_at, reserva, income, data_reserva) FROM stdin;
 \.
 
 

@@ -42,6 +42,9 @@ model analysis {
   summary      String
   improvement  String
   created_at   DateTime @default(now()) @db.Timestamp(0)
+  reserva      Int// Nova coluna
+  income       Float    // Nova coluna
+  data_reserva DateTime? // Nova coluna (opcional, pode ser null)
 
   session session @relation(fields: [session_id], references: [id], onDelete: Cascade)
 }
